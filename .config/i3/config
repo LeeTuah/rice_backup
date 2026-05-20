@@ -229,6 +229,14 @@ exec_always --no-startup-id autotiling
 # aliases
 # exec_always --no-startup-id alias ff=fastfetch
 
+# updating colors for pywal
+set_from_resource $bg color0 #000000
+set_from_resource $fg color7 #ffffff
+set_from_resource $primary color1 #000000
+
+client.focused          $primary $primary $fg   $primary  $primary
+client.unfocused        $bg      $bg      $fg   $bg       $bg
+
 for_window [class="copyq"] floating enable, border pixel 1
 
 bindsym $mod+w exec python ~/Pictures/Wallpapers/script.py

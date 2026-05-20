@@ -21,3 +21,5 @@ while (status_code != 0):
 
 	if status_code == 0:
 		subprocess.run(["wal", "-i", f"{wallpaper_folder_path}{random_wall}"])
+		subprocess.run(["i3-msg", "reload"])
+		subprocess.run(["polybar-msg", "cmd", "restart"])

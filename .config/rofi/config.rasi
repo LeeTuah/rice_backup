@@ -5,6 +5,8 @@ configuration {
   font: "JetBrainsMono Nerd Font Medium 10";
 }
 
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
 @theme "/dev/null"
 
 * {

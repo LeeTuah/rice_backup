@@ -44,10 +44,12 @@ def backup(run_backup: bool):
 		if run_backup:
 			if source_folder.exists():
 				shutil.copytree(source_folder, backup_folder, dirs_exist_ok=true)
+				print(f"[+] Backed up: {folder}")
 
 		else:
 			if backup_folder.exists():
 				shutil.copytree(backup_folder, source_folder, dirs_exist_ok=true)
+				print(f"[*] Restored: {folder}")
 
 	# wallpapers backup
 	source_path = HOMEPATH / "Pictures" / "Wallpapers"
@@ -56,10 +58,12 @@ def backup(run_backup: bool):
 	if run_backup:
 		if source_path.exists():
 			shutil.copytree(source_path, backup_path, dirs_exist_ok=true)
+			print("[-] Backed up wallpapers.")
 
 	else:
 		if backup_path.exists():
 			shutil.copytree(backup_path, source_path, dirs_exist_ok=true)
+			print("[-] Restored wallpapers.")
 
 def main():
 	print("1. Back up Rice\n2. Load last Backup\n3. Exit\n>> ", end="")

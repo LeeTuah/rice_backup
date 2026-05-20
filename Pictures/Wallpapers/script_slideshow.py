@@ -21,5 +21,7 @@ while (True):
 
 	if feh_run_process.returncode == 0:
 		subprocess.run(["wal", "-i", f"{wallpaper_folder_path}{random_wall}"])
+		subprocess.run(["i3-msg", "reload"])
+		subprocess.run(["polybar-msg", "cmd", "restart"])
 
 	time.sleep(SLIDESHOW_TIME_IN_SEC)
