@@ -212,13 +212,13 @@ exec_always --no-startup-id bash ~/.screenlayout/mainlayout.sh
 
 # use EITHER static wall OR slideshow wall
 # random static wall generated
-# exec_always --no-startup-id python ~/Pictures/Wallpapers/script.py 
+exec_always --no-startup-id python ~/Pictures/Wallpapers/script.py 
 # slideshow wall generated (change delay in the python script)
-exec_always --no-startup-id python ~/Pictures/Wallpapers/script_slideshow.py
+# exec_always --no-startup-id python ~/Pictures/Wallpapers/script_slideshow.py
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 #gaps top 43
-# exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom -b
 exec_always --no-startup-id dunst
 exec_always --no-startup-id nm-applet
 

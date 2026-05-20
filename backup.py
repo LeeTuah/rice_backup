@@ -10,7 +10,7 @@ HOMEPATH = Path(f"/home/{USERNAME}")
 # config_path = f"{HOMEPATH}/.config/"
 # wallpaper_path = f"{HOMEPATH}/Pictures/Wallpapers/"
 
-config_files = ["alacritty", "fastfetch", "i3", "i3blocks", "polybar", "rofi"]
+config_files = ["alacritty", "fastfetch", "i3", "i3blocks", "polybar", "rofi", "wal", "picom"]
 
 def verify_config_folders(rice_backup: bool):
 	base_path = Path()

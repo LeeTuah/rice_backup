@@ -2,7 +2,9 @@ from pathlib import Path
 import random
 import subprocess
 
-wallpaper_folder_path = "/home/leetuah/Pictures/Wallpapers/"
+USERNAME = "leetuah"
+
+wallpaper_folder_path = f"/home/{USERNAME}/Pictures/Wallpapers/"
 wallpaper_folder = Path(wallpaper_folder_path)
 all_walls = [f.name for f in wallpaper_folder.iterdir() if f.is_file()]
 status_code = 999
@@ -20,6 +22,7 @@ while (status_code != 0):
 	status_code = feh_run_process.returncode
 
 	if status_code == 0:
-		subprocess.run(["wal", "-i", f"{wallpaper_folder_path}{random_wall}"])
+		subprocess.run(["wal", "-q", "-n", "-i", f"{wallpaper_folder_path}{random_wall}"])
+		subprocess.run(["ln", "-sf", f"/home/{USERNAME}/.cache/wal/colors-discord.css", f"/home/{USERNAME}/.config/vesktop/themes/pywal.theme.css"])
 		subprocess.run(["i3-msg", "reload"])
 		subprocess.run(["polybar-msg", "cmd", "restart"])
