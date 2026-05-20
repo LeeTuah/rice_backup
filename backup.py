@@ -101,7 +101,7 @@ def backup(run_backup: bool):
 			if backup_file.exists():
 				shutil.copy(backup_file, source_file)
 				print(f"[+] Restored {file}")
-	
+
 	# base folder backup
 	for file in base_file:
 		source_file = HOMEPATH / file
