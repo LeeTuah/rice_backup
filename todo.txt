@@ -1,0 +1,2 @@
+dynamic colors for each wallpaper
+picom

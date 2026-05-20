@@ -1,0 +1,41 @@
+# Global properties
+separator=true
+separator_block_width=15
+markup=pango
+
+[cpu]
+label=󰻠 
+command=top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1"%"}'
+interval=2
+color=#ff5555
+
+[memory]
+label=󰍛 
+command=free -h | awk '/^Mem:/ {print $3 "/" $2}'
+interval=10
+color=#50fa7b
+
+[disk]
+label=󰋊 
+command=df -h / | awk '/\// {print $4}'
+interval=30
+color=#8be9fd
+
+[volume]
+label=♪ 
+command=pamixer --get-volume-human
+interval=once
+signal=10
+color=#f1fa8c
+
+[bluetooth]
+label= 
+command=bluetoothctl info | grep "Battery Percentage" | awk '{print $NF}' | tr -d '()'
+interval=30
+color=#24a1ff
+
+[time]
+label=󰃰 
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1
+color=#bd93f9
