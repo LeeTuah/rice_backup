@@ -1,0 +1,41 @@
+configuration {
+    show-icons: true;
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+window {
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+listview {
+    columns: 4;
+    lines: 3;
+    spacing: 20px;
+    layout: vertical;
+    fixed-columns: true;
+}
+
+element-icon {
+    size: 180px;
+    horizontal-align: 0.5;
+    background-color: transparent;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    padding: 5px;
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element {
+    orientation: vertical;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    text-color: @foreground;
+}

@@ -239,7 +239,7 @@ client.unfocused        $bg      $bg      $fg   $bg       $bg
 
 for_window [class="copyq"] floating enable, border pixel 1
 
-bindsym $mod+w exec python ~/Pictures/Wallpapers/script.py
+bindsym $mod+Shift+Control+w exec python ~/Pictures/Wallpapers/script.py
 bindsym $mod+b exec microsoft-edge-stable
 bindsym $mod+Shift+v exec code 
 bindsym $mod+y exec vesktop
@@ -250,4 +250,4 @@ bindsym $mod+p exec okular
 bindsym $mod+Escape exec flatpak run io.missioncenter.MissionCenter
 bindsym $mod+u exec spotify
 bindsym $mod+Shift+g exec xdg-open https://gemini.google.com/u/1/app
-
+bindsym $mod+w exec --no-startup-id ~/.config/rofi/wallpaper-selector.sh
