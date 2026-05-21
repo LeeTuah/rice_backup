@@ -24,7 +24,7 @@ while (status_code != 0):
 	if status_code == 0:
 		subprocess.run(["wal", "-q", "-n", "-i", f"{wallpaper_folder_path}{random_wall}"])
 
-		subprocess.run(["ln", "-sf", f"/home/{USERNAME}/.cache/wal/colors-discord.css", f"/home/{USERNAME}/.config/vesktop/themes/pywal.theme.css"])
+		subprocess.run(["cp", f"/home/{USERNAME}/.cache/wal/colors-discord.css", f"/home/{USERNAME}/.config/vesktop/themes/pywal.theme.css"])
 
 		subprocess.run(["i3-msg", "reload"])
 		subprocess.run(["polybar-msg", "cmd", "restart"])

@@ -17,6 +17,7 @@ if [ -n "$selected" ]; then
 
     feh --bg-fill "$wall_path"
     wal -q -n -i "$wall_path"
+    cp ~/.cache/wal/colors-discord.css ~/.config/vesktop/themes/pywal.theme.css
 
     i3-msg reload > /dev/null
     polybar-msg cmd restart > /dev/null
