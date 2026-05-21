@@ -226,9 +226,6 @@ exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id copyq
 exec_always --no-startup-id autotiling
 
-# aliases
-# exec_always --no-startup-id alias ff=fastfetch
-
 # updating colors for pywal
 set_from_resource $bg color0 #000000
 set_from_resource $fg color7 #ffffff
