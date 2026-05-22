@@ -226,6 +226,8 @@ exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id copyq
 exec_always --no-startup-id autotiling
 
+exec_always --no-staartup-id notify-send "clean" "your drive"
+
 # updating colors for pywal
 set_from_resource $bg color0 #000000
 set_from_resource $fg color7 #ffffff

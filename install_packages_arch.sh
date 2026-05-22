@@ -55,6 +55,7 @@ OFFICIAL_PACKAGES=(
     "gdb"
     "glfw-x11"
     "glm"
+    "ncdu"
 )
 
 echo "Installing official packages."
