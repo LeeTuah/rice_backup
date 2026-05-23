@@ -7,6 +7,7 @@ alias ls='ls --color=auto'
 alias ll='ls -la'
 alias ff='fastfetch'
 alias cleansystem='~/.config/i3/scripts/cleanup.sh'
+alias monke='cat ~/.cache/wal/colors-monkeytype.css'
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

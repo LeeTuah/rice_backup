@@ -3,9 +3,9 @@
 WALL_DIR="/home/leetuah/Pictures/Wallpapers"
 
 rofi_list=""
-for img in "$WALL_DIR"/*.{jpg,jpeg,png}; do
-    [ -e "$img" ] || continue 
-    
+for img in "$WALL_DIR"/*.{jpg,jpeg,png,gif}; do
+    [ -e "$img" ] || continue
+
     filename=$(basename "$img")
     rofi_list+="${filename}\0icon\x1f${img}\n"
 done

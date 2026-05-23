@@ -1,0 +1,12 @@
+:root {{
+  --bg-color: {background};
+  --main-color: {color2};
+  --caret-color: {color2};
+  --sub-color: {color8};
+  --sub-alt-color: {background};
+  --text-color: {foreground};
+  --error-color: {color1};
+  --error-extra-color: {color9};
+  --colorful-error-color: {color1};
+  --colorful-error-extra-color: {color9};
+}}
