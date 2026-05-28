@@ -23,7 +23,7 @@ OFFICIAL_PACKAGES=(
     "libnotify"
     "python-pywal"
     "polkit-gnome"
-    
+
     "pipewire"
     "pipewire-pulse"
     "pavucontrol"
@@ -35,7 +35,7 @@ OFFICIAL_PACKAGES=(
     "zsh-autosuggestions"
     "zsh-syntax-highlighting"
     "fastfetch"
-    
+
     "python"
     "thunar"
     "unzip"
@@ -56,6 +56,8 @@ OFFICIAL_PACKAGES=(
     "glfw-x11"
     "glm"
     "ncdu"
+    "xournalpp"
+    "rnote"
 )
 
 echo "Installing official packages."
