@@ -225,6 +225,7 @@ exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id copyq
 exec_always --no-startup-id autotiling
+exec_always --no-startup-id /usr/bin/kdeconnectd
 
 exec_always --no-staartup-id notify-send "clean" "your drive"
 
